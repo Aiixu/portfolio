@@ -1,0 +1,51 @@
+.toolbar
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 45px;
+    height: 100%;
+
+    background: #333333;
+
+    list-style-type: none;
+    
+    display: flex;
+    flex-direction: column;
+}
+
+.toolbar li
+{
+    cursor: pointer;
+}
+
+.toolbar li img
+{
+    width: 50%;
+
+    padding: 25%;
+}
+
+.toolbar li.interactable_selected a img
+{
+    border-left: 1px solid #ffffff;
+}
+
+.toolbar li.interactable_selected a img,
+.toolbar li:hover
+{
+    filter: brightness(1000%);
+}
+
+.toolbar,
+.toolbar li
+{
+    margin: 0;
+    padding: 0;
+}
+
+.toolbar li:nth-last-of-type(2)
+{
+    margin-top: auto;
+}
